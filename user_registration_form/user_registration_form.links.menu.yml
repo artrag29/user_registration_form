@@ -1,0 +1,5 @@
+user_registration_form.settings:
+  title: 'Posti api settings'
+  description: 'Configure Posti api settings for user registration form.'
+  route_name: user_registration_form.settings
+  parent: user.admin_index

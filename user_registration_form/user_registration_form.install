@@ -1,0 +1,25 @@
+<?php
+
+use Drupal\Core\Entity\Entity\EntityFormDisplay;
+use Drupal\Core\Entity\Entity\EntityViewDisplay;
+
+/**
+ * Implements hook_install().
+ */
+function user_registration_form_install() {
+
+  EntityFormDisplay::load('user.user.default')
+    ->setComponent('field_municipality', [
+      'region' => 'content',
+      'type' => 'municipality_widget',
+    ])
+    ->save();
+
+  EntityViewDisplay::load('user.user.default')
+    ->setComponent('field_municipality', [
+      'region' => 'content',
+      'type' => 'municipality_formatter',
+    ])
+    ->save();
+
+}

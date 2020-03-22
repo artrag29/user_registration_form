@@ -1,0 +1,10 @@
+name: 'User registration form'
+type: module
+description: 'Add custom municipality field type to user registration form.'
+core: 8.x
+package: 'Custom'
+
+dependencies:
+  - drupal:user
+
+configure: posti_api_settings_form.settings

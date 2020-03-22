@@ -1,0 +1,7 @@
+user_registration_form.settings:
+  path: '/admin/config/people/user_registration_form'
+  defaults:
+    _title: 'Posti api settings for user registration form'
+    _form: Drupal\user_registration_form\Form\PostiApiSettingsForm
+  requirements:
+    _permission: 'administer site configuration'

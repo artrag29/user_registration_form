@@ -1,0 +1,4 @@
+services:
+  user_registration_form.municipality_service:
+    class: Drupal\user_registration_form\PostiApiService
+    arguments: ['@http_client_factory', '@config.factory']
