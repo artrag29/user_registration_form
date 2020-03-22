@@ -2,3 +2,4 @@ posti:
   service_url: 'https://api.postit.lt/v2/'
   api_key: ELO1xno7R6KF0XyegyzU
   limit: '20'
+  municipality: '60'
